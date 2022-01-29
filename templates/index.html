@@ -25,7 +25,7 @@
                     <!--  -->
                     <div class="inputContainer half last">
                         <i class="fa fa-caret-down selectArrow"></i>
-                        <select id="category" class="taskCategory" name="category_select">
+                        <select id="category" class="taskCategory" required name="category_select">
                         <option class="disabled" value="">Choose a category</option>
                         {% for category in categories %}
                             <option class="" value="{{ category.name }}" name="{{ category.name }}">{{ category.name }}</option>
@@ -35,7 +35,7 @@
                     </div>
                     <!--  -->
                     <div class="inputContainer half last right">
-                        <input type="date" id="dueDate" class="taskDate" name="date">
+                        <input type="date" id="dueDate" required class="taskDate" name="date">
                         <label for="dueDate">Due Date</label>
                     </div>
                     <!--  -->
